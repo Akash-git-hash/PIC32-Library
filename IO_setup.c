@@ -15,16 +15,11 @@ void GPIO_init(){
     //  
     // */
 
-    // DC Motor Configuration             
-    TRISAbits.TRISA12 = 0; // IN1
-    TRISCbits.TRISC14 = 0; // IN2
-    TRISCbits.TRISC11 = 0; // Sleep
-    
     // UART Module (UART)
 
     // UART1
-    TRISCbits.TRISC12 = 0;   // U1TX
-    TRISAbits.TRISA6 = 1;    // U1RX
+    // TRISCbits.TRISC12 = 0;   // U1TX
+    // TRISAbits.TRISA6 = 1;    // U1RX
      
     // PWM/Output Compare Module (CCPx)
 
@@ -39,7 +34,7 @@ void GPIO_init(){
     // CCP2
     // TRISCbits.TRISC2 = 0;        // OCM2A //
     // TRISCbits.TRISC3 = 0;        // OCM2B //
-    TRISBbits.TRISB0 = 0;        // OCM2C 
+    // TRISBbits.TRISB0 = 0;        // OCM2C 
     // TRISBbits.TRISB1 = 0;        // OCM2D 
     // TRISBbits.TRISB2 = 0;        // OCM2E  
     // TRISBbits.TRISB3 = 0;        // OCM2F  
